@@ -1,0 +1,34 @@
+<html><head></head><body><dom-module id="tabs-switch">
+ <template>
+ 
+      <paper-tabs selected="{{selected}}" fit-container="" scrollable="">
+        <paper-tab>View Links</paper-tab>
+        <paper-tab>View Buttons</paper-tab>
+        <paper-tab>The third tab</paper-tab>
+      </paper-tabs>
+
+      <iron-pages selected="{{selected}}">
+          <tab-one></tab-one>
+          <tab-two></tab-two>
+          <tab-three></tab-three>
+      </iron-pages>
+</template>
+<style type="text/css">
+paper-tabs{
+	background-color: #fff;
+	color:#333;
+	padding: 0px;
+  --paper-tabs-selection-bar-color:#f1c40f;
+
+}	
+ paper-tabs paper-tab.iron-selected {
+ 	background-color: #16a085;
+    color: #fff;
+  }
+	paper-tabs::content >paper-ripple:{
+		color: var(--paper-tab-ink, red);
+	}
+</style>
+  
+  <script>Polymer({is:"tabs-switch",properties:{selected:{type:Number,value:0}}});</script>
+</dom-module></body></html>

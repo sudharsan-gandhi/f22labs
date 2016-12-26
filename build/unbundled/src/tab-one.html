@@ -1,0 +1,6 @@
+<html><head></head><body><dom-module id="tab-one">
+<template>
+<paper-input label="Post link" value="{{link}}"></paper-input>
+<iframe src="{{link}}" width="{{width}}" height="{{height}}" style="border:none;overflow:hidden" scrolling="yes" frameborder="0" allowtransparency="true" allowfullscreen="true"></iframe>
+</template>
+<script type="text/javascript">Polymer({is:"tab-one",properties:{link:{type:String,value:"https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FEIPMmeme%2Fvideos%2F705064259667771%2F&show_text=0&width=560"},width:{type:Number,value:document.documentElement.clientWidth},height:{type:Number,value:16*document.documentElement.clientWidth/9}}});</script></dom-module></body></html>
